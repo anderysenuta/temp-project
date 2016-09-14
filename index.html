@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body ng-controller="PatientController as vm">
+
+<div class="b-search">
+    <input type="text" placeholder="Search patient" ng-keyup="vm.search($event)">
+</div>
+<div class="b-result">
+<ul>
+    <li ng-repeat="item in patients" style="border-bottom: 1px solid #ccc;">
+        <p><b>{{item.fullname}}</b></p>
+        <p>{{item.birthday}}</p>
+        <p><i>{{item.policy}}</i></p>
+    </li>
+</ul>
+</div>
+
+<script src="node_modules/angular/angular.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

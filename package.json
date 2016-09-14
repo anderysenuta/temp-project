@@ -1,0 +1,22 @@
+{
+  "name": "lanit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "angular": "1.4.12"
+  },
+  "devDependencies": {
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "ts-loader": "^0.8.2",
+    "tsd": "^0.6.5",
+    "webpack": "^1.13.2"
+  },
+  "scripts": {
+    "compile": "tsc --sourcemap --out app.js _all.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
